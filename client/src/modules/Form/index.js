@@ -11,7 +11,7 @@ const Form = ({
             fullName: ''
         }),
         email: '',
-        password: ''
+        password: '' 
     })
  return (
     <div className="bg-light h-screen flex items-center justify-center">
@@ -24,7 +24,7 @@ const Form = ({
             <Input label="Password" type="password" name="password" placeholder="Enter your Password" className="mb-14 w-[75%]" value={data.password} onChange={(e) => setData({ ...data, password: e.target.value }) }/>
             <Button label={isSignInPage ? 'Sign in': 'Sign up'} type='submit' className="w-[75%] mb-2" />
             </form>
-            <div>{ isSignInPage ? "Don't have an account?" : "Already have an account?"} <span className=" text-primary cursor-pointer underline" >{ isSignInPage ? 'Sign up' : 'Sign in'}</span></div>
+            <div>{ isSignInPage ? "Don 't have an account?" : "Already have an account?"} <span className=" text-primary cursor-pointer underline" >{ isSignInPage ? 'Sign up' : 'Sign in'}</span></div>
         </div>
     </div>
   )
